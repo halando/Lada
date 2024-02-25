@@ -1,0 +1,31 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bejelentkezés és Regisztráció</title>
+</head>
+<body>
+    <h2>Bejelentkezés</h2>
+    <form action="/login" method="POST">
+        <label for="loginEmail">E-mail cím:</label>
+        <input type="email" id="loginEmail" name="email" required><br><br>
+        <label for="loginPassword">Jelszó:</label>
+        <input type="password" id="loginPassword" name="password" required><br><br>
+        <button type="submit">Bejelentkezés</button>
+    </form>
+
+    <h2>Regisztráció</h2>
+    <form action="/register" method="POST">
+        <label for="registerName">Név:</label>
+        <input type="text" id="registerName" name="name" required><br><br>
+        <label for="registerEmail">E-mail cím:</label>
+        <input type="email" id="registerEmail" name="email" required><br><br>
+        <label for="registerPassword">Jelszó:</label>
+        <input type="password" id="registerPassword" name="password" required><br><br>
+        <button type="submit">Regisztráció</button>
+    </form>
+</body>
+</html>
